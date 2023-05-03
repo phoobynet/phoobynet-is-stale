@@ -1,6 +1,6 @@
 {
   "name": "@phoobynet/is-stale",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Is a date stale based on a week pattern",
   "main": "dist/index.js",
   "license": "MIT",
@@ -11,8 +11,8 @@
     "build": "tsc --build",
     "test": "jest",
     "lint": "eslint",
-    "prepare": "npm run build && husky install",
-    "prepublishOnly": "npm run lint",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run lint && npm run build",
     "preverions": "npm run lint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
@@ -21,8 +21,7 @@
     "date-fns": "^2.30.0"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/phoobynet/is-stale"
+    "url": "https://github.com/phoobynet/phoobynet-is-stale"
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",

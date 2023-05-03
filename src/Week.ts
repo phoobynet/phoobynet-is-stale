@@ -14,6 +14,9 @@ import {
 
 const timeRegex = /^(0[0-9]|1[0-9]|2[0-3])[0-5][0-9]$/
 
+/**
+ * Represents a week pattern that can be used to determine if a given date is considered "stale"
+ */
 export default class Week {
   private readonly _relativeTo: Date
   private readonly _weekDays: WeekDay[]
